@@ -398,12 +398,20 @@
         <textarea class="form-textarea" id="person-comment" name="person-comment"
           placeholder="Введіть текст"></textarea>
 
+        <div class="checkbox-container">
+          <input class="checkbox-input visually-hidden" id="terms-checkbox" type="checkbox" name="terms-checkbox">
+          <svg class="icon-checkbox" width="16" height="15">
+            <use href="./images/icon.svg#icon-checkbox"></use>
+          </svg>
+          <svg class="icon-vector" width="16px" height="15px">
+            <use href="./images/icon.svg#icon-vector"></use>
+          </svg>
+          <label class="checkbox-label" for="terms-checkbox">
+            Погоджуюся з розсилкою та приймаю <a href="#" class="checkbox-link">Умови
+              договору</a></label>
 
-        <input class="checkbox-input visually-hidden" id="terms-checkbox" type="checkbox" name="terms-checkbox">
-        <label class="checkbox-label" for="terms-checkbox">Погоджуюся з розсилкою та приймаю <a href="#">Умови
-            договору</a></label>
-
-
+        </div>
+        <button class="modal-button" type="submit">Відправити</button>
       </form>
     </div>
   </div>
