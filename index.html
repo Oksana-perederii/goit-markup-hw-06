@@ -360,7 +360,23 @@
         </ul>
 
       </div>
+
+      <div class="email-container">
+        <p class="email-title">Підпишіться на розсилку</p>
+        <label class="footer-form-label" for="person-email"></label>
+
+        <input class="footer-form-input" id="person-email" type="email" name="person-email" placeholder="E-mail">
+
+      </div>
+      <div class="footer-button-container">
+        <button class="footer-send-button" type="submit">Підписатися<svg width="24" height="24" class="icon-send">
+            <use href="./images/icon.svg#icon-send">
+            </use>
+          </svg></button>
+
+      </div>
     </div>
+
   </footer>
   <div class="backdrop is-hidden" data-modal>
     <div class="modal">
@@ -371,17 +387,20 @@
       </button>
       <h2 class="form-title">Залиште свої дані, ми вам передзвонимо</h2>
 
-      <form class="contact-form" name="contact-form">
+      <form class="contact-form" name="contact-form" autocomplete="off">
         <label class="form-label" for="person-name">Ім'я</label>
         <div class="form-control">
-          <input class="form-input" id="person-name" type="text" name="person-name">
+          <input class="form-input" id="person-name" type="text" name="person-name" pattern="^[Є-ЯҐа-їґ]+\s[Є-ЯҐа-їґ]+$"
+            title="Введіть ім'я та прізвище">
+
           <svg class="form-icon" width="16" height="16">
             <use href="./images/icon.svg#icon-person"></use>
           </svg>
         </div>
         <label class="form-label" for="person-tel">Телефон</label>
         <div class="form-control">
-          <input class="form-input" id="person-tel" type="tel" name="person-tel">
+          <input class="form-input" id="person-tel" type="tel" name="person-tel" pattern="^\+[0-9]{12}"
+            title="Ведіть номер телефона">
           <svg class="form-icon" width="16" height="16">
             <use href="./images/icon.svg#icon-phone"></use>
           </svg>
@@ -400,17 +419,16 @@
 
         <div class="checkbox-container">
           <input class="checkbox-input visually-hidden" id="terms-checkbox" type="checkbox" name="terms-checkbox">
-          <svg class="icon-checkbox" width="16" height="15">
-            <use href="./images/icon.svg#icon-checkbox"></use>
-          </svg>
+
           <svg class="icon-vector" width="16px" height="15px">
             <use href="./images/icon.svg#icon-vector"></use>
           </svg>
+
           <label class="checkbox-label" for="terms-checkbox">
             Погоджуюся з розсилкою та приймаю <a href="#" class="checkbox-link">Умови
               договору</a></label>
-
         </div>
+
         <button class="modal-button" type="submit">Відправити</button>
       </form>
     </div>
