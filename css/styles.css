@@ -607,11 +607,11 @@ img {
   background-color: var(--accent-text-color);
 }
 
-.email-container {
+.email-form {
   margin-left: 90px;
 }
 
-.email-title {
+.email-name {
   font-weight: 700;
   margin-bottom: 20px;
   font-size: 14px;
@@ -632,15 +632,18 @@ img {
   color: var(--primary-text-color);
 }
 .footer-button-container {
-  position: relative;
-  top: 53px;
-  left: 12px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
 }
 
 .footer-send-button {
-  display: block;
-  padding: 10px 62px 10px 28px;
-  min-width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 10px;
+  width: 200px;
   border-radius: 4px;
   border: 0;
   background-color: var(--button-accent-color);
@@ -656,9 +659,6 @@ img {
 }
 
 .icon-send {
-  position: absolute;
-  top: 13px;
-  right: 28px;
   fill: var(--button-text-color);
 }
 
@@ -841,6 +841,7 @@ img {
 /* form */
 
 .form-title {
+  margin-bottom: 10px;
   font-size: 20px;
   line-height: 1.15;
   text-align: center;
@@ -853,7 +854,6 @@ img {
 
 .form-label {
   display: block;
-  margin-top: 10px;
   margin-bottom: 4px;
   font-size: 12px;
   line-height: 1.6;
@@ -894,6 +894,7 @@ img {
   fill: var(--accent-text-color);
 }
 .form-textarea {
+  display: block;
   width: 100%;
   height: 120px;
   padding: 12px 16px;
